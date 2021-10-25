@@ -140,10 +140,12 @@ section {
 .main-slider .slick-prev {
   left: 3%;
   border: none;
+  cursor: pointer;
 }
 .main-slider .slick-next {
   right: 3%;
   border: none;
+  cursor: pointer;
 }
 .main-slider .slick-prev::before,
 .main-slider .slick-next::before {
@@ -181,6 +183,8 @@ section {
   top: 0;
   background-color: #fafafa;
   color: #404040;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px black;
 }
 .main-slider .slick-next.hov::before {
   content: "\e93e";
@@ -190,6 +194,8 @@ section {
   top: 0;
   background-color: #fafafa;
   color: #404040;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px black;
 }
 /* hov1 */
 .main-slider .slick-prev.hov1,
@@ -206,7 +212,9 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: red;
+  background-color: #404040;
+  color: #fff;
+  box-shadow: 0px 3px 10px black;
 }
 .main-slider .slick-next.hov1::before {
   content: "\e93e";
@@ -214,7 +222,9 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: red;
+  background-color: #404040;
+  color: #fff;
+  box-shadow: 0px 3px 10px black;
 }
 
 /* .main-slider.slick-active
@@ -238,7 +248,27 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
-.main-slider .slick-dots > li {
+.main-slider .slick-dots li {
+  margin: 0 0.25em;
+}
+.main-slider .slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  border: 1px solid #000;
+}
+
+.main-slider .slick-dots li button:hover {
+  background-color: #8b8b8b;
+}
+.main-slider .slick-dots li.slick-active button {
+  background-color: #000;
+}
+/* .main-slider .slick-dots > li {
   margin-right: 5px;
   width: 10px;
   height: 10px;
@@ -260,10 +290,16 @@ section {
 .main-slider .slick-dots > li:hover.dot1::before {
   background-color: #8b8b8b;
 }
+.main-slider .slick-dots > li:hover.dot1::before.dot11 {
+  background-color: red;
+}
+.main-slider .slick-dots > li:hover.dot2::before {
+  background-color: #8b8b8b;
+}
 
 .main-slider .slick-dots > li > button {
   display: none;
-}
+} */
 /* .slick-prev.slick-arrow {
   width: 0;
   height: 0;

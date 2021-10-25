@@ -3,6 +3,8 @@ $(function () {
   $(".main-slider").slick({
     dots: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
@@ -55,5 +57,15 @@ $(function () {
       $(".slick-next").addClass("hov1");
     }
   });
-  $(".main-slider .slick-dots > li:first-child").addClass("dot1");
+
+  $(".slick-pause").on("click", function () {
+    var $pauseBtn = $(this);
+    if ($pauseBtn.hasClass("paused")) {
+      $(".main-slider").slick("slickPlay");
+      $pauseBtn.removeClass("paused");
+    } else {
+      $(".main-slider").slick("slickPause");
+      $pauseBtn.addClass("paused");
+    }
+  });
 });
