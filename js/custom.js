@@ -4,7 +4,7 @@ $(function () {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
@@ -61,11 +61,37 @@ $(function () {
   $(".slick-pause").on("click", function () {
     var $pauseBtn = $(this);
     if ($pauseBtn.hasClass("paused")) {
+      // $(".main-slider").find(".play").hide();
+      // $(".main-slider").find(".stop").show();
       $(".main-slider").slick("slickPlay");
       $pauseBtn.removeClass("paused");
     } else {
+      // $(".main-slider").find(".play").show();
+      // $(".main-slider").find(".stop").hide();
       $(".main-slider").slick("slickPause");
       $pauseBtn.addClass("paused");
     }
+  });
+  $(".play").on("click", function () {
+    $(".main-slider").slick("slickPlay");
+    // var $pauseBtn = $(this);
+    // if ($pauseBtn.hasClass("paused")) {
+    //   $(".main-slider").slick("slickPlay");
+    //   $pauseBtn.removeClass("paused");
+    // } else {
+    //   $(".main-slider").slick("slickPause");
+    //   $pauseBtn.addClass("paused");
+    // }
+  });
+  $(".stop").on("click", function () {
+    $(".main-slider").slick("slickPause");
+    // var $pauseBtn = $(this);
+    // if ($pauseBtn.hasClass("paused")) {
+    //   $(".main-slider").slick("slickPlay");
+    //   $pauseBtn.removeClass("paused");
+    // } else {
+    //   $(".main-slider").slick("slickPause");
+    //   $pauseBtn.addClass("paused");
+    // }
   });
 });
