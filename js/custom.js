@@ -4,7 +4,7 @@ $(function () {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
