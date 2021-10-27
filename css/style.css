@@ -43,7 +43,8 @@ header {
   font-size: 13px;
 }
 .header-container {
-  max-width: 1600px;
+  width: 1600px;
+  max-width: calc(1600px + 10%);
   margin: auto;
   display: flex;
   height: 54px;
@@ -114,6 +115,7 @@ section {
 .main-slier-inner {
   position: relative;
   width: 88%;
+  max-width: calc(1600px + 10%);
   margin: auto;
 }
 .main-slider {
@@ -325,6 +327,7 @@ section {
 .showping {
   padding: 48px 0;
   width: 88%;
+  max-width: calc(1600px + 10%);
   margin: auto;
 }
 .showping-inner {
@@ -365,9 +368,10 @@ section {
 
 /* product */
 .product {
-  width: 88%;
+  width: 100%;
+  max-width: calc(1600px + 10%);
   margin: auto;
-  padding: 0 2%;
+  padding: 0 5%;
 }
 .product-inner {
   display: flex;
@@ -376,6 +380,12 @@ section {
 .product-inner li {
   width: 25%;
   padding: 10px;
+}
+.product-inner li:first-child {
+  padding-left: 0;
+}
+.product-inner li:last-child {
+  padding-right: 0;
 }
 .product-inner li a {
 }
@@ -424,20 +434,21 @@ section {
 
 /* onedrive */
 .onedrive {
-  margin-top: 48px;
   height: 600px;
-  margin-bottom: 40px;
-  padding: 0 3%;
+  padding: 0 5%;
+  max-width: calc(1600px + 10%);
+  margin: 48px auto;
 }
 .onedrive-inner {
-  width: 88%;
-  max-width: 2048px;
+  width: 100%;
+  /* max-width: 2048px; */
+  max-width: calc(1600px + 10%);
   height: 600px;
   position: relative;
   background: url(../images/onedrive.webp) no-repeat center center;
   background-size: cover;
-  margin: auto;
-  padding-left: 100px;
+
+  margin: 0 auto;
 }
 .onedrive-text {
   position: absolute;
@@ -480,8 +491,9 @@ section {
 }
 
 .sns-wrapper {
-  padding: 0 2.4%;
+  padding: 0 5%;
   width: 88%;
+  max-width: calc(1600px + 10%);
   height: 30px;
   line-height: 30px;
   margin: 60px auto 0;
@@ -501,4 +513,75 @@ section {
 }
 .sns-wrapper a:last-child img {
   margin-right: 0;
+}
+footer {
+  margin-top: 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: calc(1600px + 10%); */
+
+  background: #f2f2f2;
+}
+.footer-list {
+  float: left;
+  padding: 0 5%;
+  margin: 0 auto;
+  min-width: calc(1600px + 10%);
+}
+.footer-list ul {
+  padding: 0 12px;
+  float: left;
+  width: 16.6666666667%;
+}
+.footer-list ul li {
+  padding: 8px 0;
+  font-size: 11px;
+  line-height: 16px;
+}
+.footer-list ul li:first-child {
+  padding: 36px 0 4px;
+  color: #616161;
+  font-size: 15px;
+  line-height: 20px;
+}
+.footer-list ul li a {
+  text-decoration: underline;
+}
+.footer-terms {
+  display: flex;
+  padding: 30px 5% 16px;
+  max-width: calc(1600px + 10%);
+  margin: 0 64px;
+  justify-content: space-between;
+}
+
+.footer-terms ul {
+  display: flex;
+}
+.footer-terms div {
+  font-size: 11px;
+  line-height: 16px;
+  display: inline-block;
+  padding-right: 24 px;
+  color: #616161;
+  white-space: nowrap;
+}
+.footer-terms div span {
+  display: block;
+}
+.footer-terms div span i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.footer-terms ul li {
+  padding: 0 24px 4px 0;
+  display: inline-block;
+  font-size: 11px;
+  color: #616161;
+}
+.footer-terms ul li:nth-child(2) {
+  font-weight: bold;
 }
