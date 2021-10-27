@@ -322,6 +322,10 @@ section {
   background-color: transparent;
   cursor: pointer;
 }
+/* wrapper */
+.wrapper {
+  width: 100%;
+}
 
 /* showping */
 .showping {
@@ -528,7 +532,8 @@ footer {
   float: left;
   padding: 0 5%;
   margin: 0 auto;
-  min-width: calc(1600px + 10%);
+  width: 100%;
+  max-width: calc(1600px + 10%);
 }
 .footer-list ul {
   padding: 0 12px;
@@ -551,9 +556,10 @@ footer {
 }
 .footer-terms {
   display: flex;
+  width: 100%;
   padding: 30px 5% 16px;
   max-width: calc(1600px + 10%);
-  margin: 0 64px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -564,7 +570,6 @@ footer {
   font-size: 11px;
   line-height: 16px;
   display: inline-block;
-  padding-right: 24 px;
   color: #616161;
   white-space: nowrap;
 }
