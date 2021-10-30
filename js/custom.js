@@ -94,4 +94,16 @@ $(function () {
     //   $pauseBtn.addClass("paused");
     // }
   });
+  // $("body").on("click", function (e) {
+  //   var $tgPoint = $(e.target);
+  //   var $popCallBtn = $tgPoint.hasClass("active");
+  //   var $popArea = $tgPoint.hasClass("main-wrapper");
+
+  //   if (!$popCallBtn && !$popArea) {
+  //     $(".menu-wrapper").removeClass("active");
+  //   }
+  // });
+  $(".menu-btn").on("click", function () {
+    $(".menu-wrapper").toggleClass("active");
+  });
 });
