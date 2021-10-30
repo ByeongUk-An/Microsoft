@@ -131,9 +131,11 @@ section {
 }
 .slider-item {
   background: url(../images/slide-img1.webp) no-repeat center center;
+  position: relative;
 }
 .slider-item2 {
   background: url(../images/slide-img2.webp) no-repeat center center;
+  position: relative;
 }
 .main-slider .slick-prev,
 .main-slider .slick-next {
@@ -231,6 +233,7 @@ section {
 }
 .slider-item-text a:hover span {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .slider-item-text a span::after {
   content: "\e93e";
@@ -243,6 +246,53 @@ section {
 .slider-item-text a:hover span::after {
   left: 8px;
   transition: 0.3s;
+}
+.slider-item-text2 {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translateY(-50%);
+}
+.slider-item-text2 h3 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-top: -3px;
+  padding-top: 0px;
+  color: #fff;
+}
+.slider-item-text2 p {
+  color: #fff;
+  margin: 20px 0;
+}
+.pc-satus {
+  position: relative;
+  top: 10px;
+  padding: 10px 30px;
+  background-color: #fff;
+  font-weight: bold;
+}
+.pc-satus:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  transition: 0.5s;
+}
+
+.pc-satus::after {
+  content: "\e93e";
+  font-family: xeicon;
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  transition: 0.5s;
+}
+.pc-satus:hover::after {
+  right: 6px;
+}
+.slider-item-text2 .slider-item-text2 .new-product {
+  display: inline-block;
+  padding: 3px 14px 5px;
+  background-color: #ffb900;
+  color: #000;
 }
 /* hov1 */
 .main-slider .slick-prev.hov1,

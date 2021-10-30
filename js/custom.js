@@ -7,7 +7,7 @@ $(function () {
     autoplaySpeed: 2000,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
   });
   // $(".main-slider").hover(function () {
   //   if ($(".slick-slider").find(".slick-current").length) {
